@@ -1,0 +1,234 @@
+:root {
+  /* основной цвет текста */
+  --primary-text-color: #757575; 
+  /* основной цвет заголовка */
+	--title-text-color: #212121;
+  /* основные белый и черный цвет */
+  --primary-white-color: #FFFFFF;
+  --primary-black-color: #000000;
+  /* акцент */
+	--accent-color: #2196f3;
+  /* цвет фона хедера */
+  --top-line-bg-color: #FFFFFF;
+  /* основной цвет фона */
+	--primary-bg-color: #F5F5F5;
+  /* вторичный цвет фона */
+  --second-bg-color: #F5F4FA;
+	/* цвет фона hero и футера */
+  --hero-footer-bg-color: #2F303A;
+}
+
+body {
+	color: var(--primary-text-color);
+	background-color: var(--primary-bg-color);
+}
+/* цвет логотипа в хедере и футере */
+.logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.header-word {
+	color: var(--primary-black-color);
+}
+.footer-word {
+	color: var(--primary-white-color);
+}
+/* site nav */
+.site-nav .link {
+  color: var(--title-text-color);
+}
+.site-nav .link:hover, .site-nav .link:focus {
+color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+/* auth nav */
+.auth-nav .link {
+  color: var(--title-text-color);
+}
+.auth-nav .link:hover, .auth-nav .link:focus {
+  color: var(--accent-color);
+}
+.auth-nav .link.current {
+  color: var(--accent-color);
+}
+/* hero */
+.hero {
+  background-color: var(--hero-footer-bg-color);
+}
+.hero-title {
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;  
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  
+}
+.button-hero {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+.button-hero:hover, .button-hero:focus {
+  color: var(--accent-color);
+  
+}
+/* sections */
+.section-title {
+  font-family: 'Roboto';
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.team-section {
+  background-color: var(--second-bg-color);
+}
+/* feature */
+.feature .feature-title {
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+.feature-text {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+/* team */
+.team-section{
+  background-color: var(--second-bg-color);
+}
+.team {
+  background: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+}
+.team-title {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.team-text {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  
+}
+/* project */
+.project-title {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color:var(--title-text-color);
+}
+.project-text {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  color:var(--primary-text-color);
+}
+/* footer */
+.footer {
+  background-color: var(--hero-footer-bg-color);
+}
+.address .address-link {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+}
+.address .address-link:hover,
+.address .address-link:focus {
+  color: var(--accent-color);
+}
+address .auth-link {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.address .auth-link:hover,
+.address .auth-link:focus {
+  color: var(--accent-color);
+}
+.button-filter {
+  font-family: 'Roboto';
+font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--title-text-color);
+background: var(--second-bg-color);
+border-radius: 4px;
+border: none;
+}
+.button-filter:hover, .button-filter:focus {
+  color: var(--accent-color);
+}
+.button-filter.current {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+  background: var(--accent-color);
+}
+.visually-hidden {
+  position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+.list {
+	list-style: none;
+}
+.line {
+	text-decoration: none;
+}
+
+
