@@ -25,7 +25,25 @@ body {
 	color: var(--primary-text-color);
 	background-color: var(--primary-white-color);
 }
-/* цвет логотипа в хедере и футере */
+.list {
+	list-style: none;
+}
+.line {
+	text-decoration: none;
+}
+.visually-hidden {
+  position: absolute;  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/*----------цвет логотипа в хедере и футере----------*/
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -40,7 +58,8 @@ body {
 .footer-word {
 	color: var(--primary-white-color);
 }
-/* site nav, auth nav*/
+
+/*----------site nav, auth nav----------*/
 .site-nav .link, .auth-nav .link {
   font-style: normal; 
   font-weight: 500;
@@ -49,20 +68,14 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
-.site-nav .link:hover, .site-nav .link:focus {
+.site-nav .link:hover, .site-nav .link:focus, .auth-nav .link:hover, .auth-nav .link:focus {
 color: var(--accent-color);
 }
-.site-nav .link.current {
+.site-nav .link.current, .auth-nav .link.current {
   color: var(--accent-color);
 }
 
-.auth-nav .link:hover, .auth-nav .link:focus {
-  color: var(--accent-color);
-}
-.auth-nav .link.current {
-  color: var(--accent-color);
-}
-/* hero */
+/*----------hero----------*/
 .hero {
   background-color: var(--hero-footer-bg-color);
 }
@@ -76,6 +89,7 @@ color: var(--accent-color);
   color: var(--primary-white-color);
 }
 .button-hero {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
@@ -92,7 +106,8 @@ color: var(--accent-color);
 .button-hero:hover, .button-hero:focus {
   background-color: var(--active-bg-color); 
 }
-/* sections */
+
+/*----------sections----------*/
 .section-title {
   font-size: 36px;
   font-weight: 700;
@@ -101,7 +116,8 @@ color: var(--accent-color);
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
-/* feature */
+
+/*----------feature----------*/
 .feature .feature-title {
   font-size: 14px;
   font-weight: 700;
@@ -116,15 +132,15 @@ color: var(--accent-color);
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-/* team */
-.team-section{
+
+/*----------team----------*/
+.section-team {
   background-color: var(--second-bg-color);
 }
 .team {
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-
 }
 .team-title {
   font-weight: 500;
@@ -139,10 +155,10 @@ color: var(--accent-color);
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-  
+  color: var(--primary-text-color); 
 }
-/* project */
+
+/*----------project----------*/
 .project-title {
   font-weight: 700;
   font-size: 18px;
@@ -156,7 +172,8 @@ color: var(--accent-color);
   letter-spacing: 0.03em;
   color:var(--primary-text-color);
 }
-/* footer */
+
+/*----------footer----------*/
 .footer {
   background-color: var(--hero-footer-bg-color);
 }
@@ -208,22 +225,7 @@ color: var(--accent-color);
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
-.visually-hidden {
-  position: absolute;  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-.list {
-	list-style: none;
-}
-.line {
-	text-decoration: none;
-}
+
+
 
 
